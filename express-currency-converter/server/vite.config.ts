@@ -23,6 +23,13 @@ export default defineConfig({
   server: {
     port: process.env.APP_LISTEN ? Number(process.env.APP_LISTEN) : 8000,
     host: "0.0.0.0",
+    // proxy: {
+    //   "/api": {
+    //     target: "http://localhost:3000",
+    //     changeOrigin: true,
+    //   },
+    // },
+    
   },
   root: "./",
   build: {

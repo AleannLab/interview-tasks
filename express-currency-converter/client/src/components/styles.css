@@ -1,0 +1,65 @@
+.converter-container {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px #ddd;
+  font-family: Arial, sans-serif;
+}
+
+.amount-input {
+  width: 100%;
+  margin-bottom: 12px;
+  font-size: 18px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.select-wrapper {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+  align-items: center;
+}
+
+.currency-select {
+  flex: 1;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.arrow {
+  align-self: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.rate-text {
+  margin-bottom: 8px;
+}
+
+.convert-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  border: none;
+  border-radius: 6px;
+  color: white;
+}
+
+.convert-button:hover {
+  background-color: #0056b3;
+}
+
+.result-text {
+  margin-top: 16px;
+  font-weight: bold;
+}
+
+.error-text {
+  margin-top: 16px;
+  color: red;
+  font-weight: bold;
+}

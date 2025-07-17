@@ -1,17 +1,19 @@
-import express from "express"
-import cors from "cors"
+import express, { Request, Response } from 'express';
 
-const createHTTPServer = () => {
-  const app = express()
+import currencyRouter from './routes/currency.routes';
+import cors from 'cors';
 
-  app.use(express.json())
-  app.use(cors({ origin: true }))
 
-  app.use("/ping", (req, res) => {
-    res.send("Pong!")
-  })
+export const app = express();
 
-  return app
-}
+app.use(cors());
 
-export const app = createHTTPServer()
+app.use(express.json());
+
+app.use('/', currencyRouter);
+
+
+app.listen(3000, () => {
+  console.log('Server listening on port 3000');
+});
+
